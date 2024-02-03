@@ -1,1 +1,8 @@
-
+eureka:
+  client:
+    fetch-registry: true  # by default it is true
+    register-with-eureka: true  # by default it is true
+    service-url:
+      defaultZone: http://localhost:8761/eureka   # where our eureka server is running
+  instance:
+    prefer-ip-address: true # when guessing the hostname the IP address of the server should be used in preference to the hostname
